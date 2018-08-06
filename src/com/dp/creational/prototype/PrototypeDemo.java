@@ -4,11 +4,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// TODO: Auto-generated Javadoc
+import org.apache.log4j.Logger;
+
 /**
  * The Class PrototypeDemo.
  */
 public class PrototypeDemo {
+
+	/** The Constant logger. */
+	private static final Logger logger = Logger.getLogger(PrototypeDemo.class);
 
 	/**
 	 * The main method.
@@ -21,30 +25,31 @@ public class PrototypeDemo {
 	public static void main(String[] args) throws IOException {
 
 		try (final BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-			System.out.print("Enter Employee Id: ");
+			logger.info("\n");
+			logger.info("Enter Employee Id: ");
 			int eid = Integer.parseInt(br.readLine());
-			System.out.print("\n");
+			logger.info("\n");
 
-			System.out.print("Enter Employee Name: ");
+			logger.info("Enter Employee Name: ");
 			String ename = br.readLine();
-			System.out.print("\n");
+			logger.info("\n");
 
-			System.out.print("Enter Employee Address: ");
+			logger.info("Enter Employee Address: ");
 			String eaddress = br.readLine();
-			System.out.print("\n");
+			logger.info("\n");
 
-			System.out.print("Enter Employee Salary: ");
+			logger.info("Enter Employee Salary: ");
 			double esalary = Double.parseDouble(br.readLine());
-			System.out.print("\n");
+			logger.info("\n");
 
 			EmployeeRecord e1 = new EmployeeRecord(eid, ename, eaddress, esalary);
 
 			e1.showRecord();
-			System.out.println("\n");
-			EmployeeRecord e2 = (EmployeeRecord) e1.getClone();
+			logger.info("\n");
+			final EmployeeRecord e2 = (EmployeeRecord) e1.getClone();
 			e2.showRecord();
-		} catch (Exception ex) {
-			System.out.println("Exception Occured due to : " + ex.getMessage());
+		} catch (final Exception ex) {
+			logger.error("Exception Occured due to : " + ex.getMessage());
 		}
 	}
 

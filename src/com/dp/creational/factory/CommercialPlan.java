@@ -1,7 +1,7 @@
 package com.dp.creational.factory;
 
-// TODO: Auto-generated Javadoc
 /**
+ * 
  * The Class CommercialPlan.
  */
 public class CommercialPlan extends Plan {
@@ -13,8 +13,7 @@ public class CommercialPlan extends Plan {
 	 */
 	@Override
 	void getRate() {
-		// TODO Auto-generated method stub
-		rate = 7.50;
+		rate = 9.50;
 	}
 
 }

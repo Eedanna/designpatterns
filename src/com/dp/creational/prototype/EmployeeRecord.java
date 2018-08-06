@@ -1,6 +1,7 @@
 package com.dp.creational.prototype;
 
-// TODO: Auto-generated Javadoc
+import org.apache.log4j.Logger;
+
 /**
  * The Class EmployeeRecord.
  */
@@ -18,13 +19,16 @@ public class EmployeeRecord implements Prototype {
 	/** The salary. */
 	private double salary;
 
+	/** The Constant logger. */
+	private static final Logger logger = Logger.getLogger(EmployeeRecord.class);
+
 	/**
 	 * Instantiates a new employee record.
 	 */
 	public EmployeeRecord() {
-		System.out.println("   Employee Records of Oracle Corporation ");
-		System.out.println("---------------------------------------------");
-		System.out.println("Eid" + "\t" + "Ename" + "\t" + "Edesignation" + "\t" + "Esalary" + "\t\t" + "Eaddress");
+		logger.info("   Employee Records ::  ");
+		logger.info("<< --------------------------------------------- >>");
+		logger.info("Eid" + "\t" + "Ename" + "\t" + "Edesignation" + "\t" + "Esalary" + "\t\t" + "Eaddress");
 
 	}
 
@@ -40,7 +44,7 @@ public class EmployeeRecord implements Prototype {
 	 * @param salary
 	 *            the salary
 	 */
-	public EmployeeRecord(int id, String name, String address, double salary) {
+	public EmployeeRecord(final int id, final String name, final String address, final double salary) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -63,7 +67,7 @@ public class EmployeeRecord implements Prototype {
 	 * @param id
 	 *            the new id
 	 */
-	public void setId(int id) {
+	public void setId(final int id) {
 		this.id = id;
 	}
 
@@ -82,7 +86,7 @@ public class EmployeeRecord implements Prototype {
 	 * @param name
 	 *            the new name
 	 */
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 
@@ -101,7 +105,7 @@ public class EmployeeRecord implements Prototype {
 	 * @param address
 	 *            the new address
 	 */
-	public void setAddress(String address) {
+	public void setAddress(final String address) {
 		this.address = address;
 	}
 
@@ -120,7 +124,7 @@ public class EmployeeRecord implements Prototype {
 	 * @param salary
 	 *            the new salary
 	 */
-	public void setSalary(double salary) {
+	public void setSalary(final double salary) {
 		this.salary = salary;
 	}
 
@@ -138,7 +142,7 @@ public class EmployeeRecord implements Prototype {
 	 * Show record.
 	 */
 	public void showRecord() {
-		System.out.println(id + "::\t" + name + "::\t" + address + "::\t" + salary);
+		logger.info(id + "::\t" + name + "::\t" + address + "::\t" + salary);
 	}
 
 }

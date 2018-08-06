@@ -3,7 +3,6 @@
  */
 package com.dp.creational.factory;
 
-// TODO: Auto-generated Javadoc
 /**
  * A factory for creating GetPlan objects.
  */
@@ -16,15 +15,15 @@ public class GetPlanFactory {
 	 *            the plan type
 	 * @return the plan
 	 */
-	public Plan getPlan(String planType) {
+	public Plan getPlan(final String planType) {
 		if (planType == null) {
 			return null;
 		}
-		if (planType.equalsIgnoreCase("DOMESTICPLAN")) {
+		if (planType.equalsIgnoreCase(String.valueOf(PlanEnum.DOMESTICPLAN))) {
 			return new DomesticPlan();
-		} else if (planType.equalsIgnoreCase("COMMERCIALPLAN")) {
+		} else if (planType.equalsIgnoreCase(String.valueOf(PlanEnum.COMMERCIALPLAN))) {
 			return new CommercialPlan();
-		} else if (planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {
+		} else if (planType.equalsIgnoreCase(String.valueOf(PlanEnum.INSTITUTIONALPLAN))) {
 			return new InstitutionalPlan();
 		}
 		return null;

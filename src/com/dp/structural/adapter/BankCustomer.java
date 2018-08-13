@@ -3,7 +3,6 @@ package com.dp.structural.adapter;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class BankCustomer.
  */

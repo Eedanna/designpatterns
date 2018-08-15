@@ -1,3 +1,5 @@
+package com.dp.structural.decorator;
+
 
 public abstract class FoodDecorator implements Food
 

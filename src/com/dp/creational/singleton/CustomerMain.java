@@ -24,7 +24,7 @@ public class CustomerMain {
 		customerService.addCustomer("Customer2", "test2@gmail.com", "AP");
 
 		logger.info("CustomerService Size : " + customerService.getSize());
-		
+
 		final CustomerService customerServiceTemp = CustomerService.getInstance();
 
 		customerServiceTemp.addCustomer("Customer3", "test1@gmail.com", "KA");

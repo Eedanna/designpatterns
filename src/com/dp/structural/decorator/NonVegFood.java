@@ -1,3 +1,4 @@
+package com.dp.structural.decorator;
 
 public class NonVegFood extends FoodDecorator{
 

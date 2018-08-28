@@ -11,8 +11,10 @@ public class AdapterPatternDemo {
 	 * @param args the arguments
 	 */
 	public static void main(String[] args) {
+		
 		final CreditCard ccard = new BankCustomer();
 		ccard.giveBankDetails();
 		System.out.println(ccard.getCreditCard());
+		
 	}
 }

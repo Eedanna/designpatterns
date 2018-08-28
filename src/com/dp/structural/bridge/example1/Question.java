@@ -1,4 +1,4 @@
-package com.dp.structural.bridge;
+package com.dp.structural.bridge.example1;
 
 /**
  * The Interface Question.

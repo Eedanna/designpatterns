@@ -1,9 +1,29 @@
 # designpatterns
-This project contains with all core java design patterns
+
+This project contains all the examples for each below Design Patterns
+
+1. Creational
+
+   > Singleton
+   > Factory
+   > Builder
+   > Prototype
+   
+2. Structural
+
+   > Adaptor
+   > Bridge
+   > Facade
+   > Decorator
+   
+3. Behavioural
+
+   > Yet to add
+
 
 Resources:
 
-GOF Book
+GOF Authors Book
 
 https://www.tutorialspoint.com/design_pattern/index.htm
 

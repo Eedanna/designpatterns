@@ -1,9 +1,9 @@
-package com.dp.structural.adapter;
+package com.dp.structural.adaptor;
 
 /**
  * The Class AdapterPatternDemo.
  */
-public class AdapterPatternDemo {
+public class AdaptorPatternDemo {
 
 	/**
 	 * The main method.
@@ -12,7 +12,7 @@ public class AdapterPatternDemo {
 	 */
 	public static void main(String[] args) {
 		
-		final CreditCard ccard = new BankCustomer();
+		final CreditCard ccard = new BankCustomerAdaptor();
 		ccard.giveBankDetails();
 		System.out.println(ccard.getCreditCard());
 		

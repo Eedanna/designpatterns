@@ -1,12 +1,12 @@
-package com.dp.structural.adapter;
+package com.dp.structural.adaptor;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * The Class BankCustomer.
+ * The Class BankCustomerAdaptor.
  */
-public class BankCustomer extends BankDetails implements CreditCard {
+public class BankCustomerAdaptor extends BankDetails implements CreditCard {
 
 	/*
 	 * (non-Javadoc)

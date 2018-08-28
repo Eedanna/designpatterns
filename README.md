@@ -5,20 +5,27 @@ This project contains all the examples for each below Design Patterns
 1. Creational
 
    > Singleton
+   
    > Factory
+   
    > Builder
+   
    > Prototype
    
 2. Structural
 
    > Adaptor
+   
    > Bridge
+   
    > Facade
+   
    > Decorator
    
 3. Behavioural
 
    > Yet to add
+   
 
 
 Resources:

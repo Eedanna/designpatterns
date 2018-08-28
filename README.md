@@ -1,6 +1,6 @@
 # designpatterns
 
-This project contains all the examples for each of the below Design Patterns
+This project contains the examples for each of the below Design Patterns
 
 1. Creational
 

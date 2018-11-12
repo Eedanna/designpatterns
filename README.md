@@ -24,7 +24,15 @@ This project contains the examples for each of the below Design Patterns
    
 3. Behavioural
 
-   > Yet to add
+   > COR (Chain of Responsibility)
+   
+   > Observer
+   
+   > Strategy
+   
+   > Template Method
+   
+   > Visitor
    
 
 
